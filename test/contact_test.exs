@@ -27,4 +27,9 @@ defmodule PRM.ContactTest do
     contact = %Contact{first_name: "John", last_name: "Doe", nickname: "Joe", addressing: :foobar}
     assert Contact.name(contact) == "John"
   end
+
+  test "starts out with no activities" do
+    contact = %Contact{first_name: "John"}
+    assert contact.activities == []
+  end
 end
