@@ -1,7 +1,18 @@
 defmodule PRM.Contact do
 
   @enforce_keys [:first_name]
-  defstruct [:first_name, :last_name, :nickname, :dob, addressing: :first_name]
+
+  defstruct [
+    first_name: nil,
+    last_name: nil,
+    nickname: nil,
+    dob: nil,
+    addressing: :first_name,
+    address: nil,
+    notes: nil,
+    reminders: [],
+    activities: []
+  ]
 
   alias __MODULE__
 
