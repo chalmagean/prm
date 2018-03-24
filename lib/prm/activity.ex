@@ -6,9 +6,4 @@ defmodule PRM.Activity do
 
   alias __MODULE__
   alias PRM.Contact
-
-  def add(contact, activity = %Activity{}) do
-    new_activities = [ activity | contact.activities ]
-    %Contact{contact | activities: new_activities}
-  end
 end
