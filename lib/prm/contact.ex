@@ -16,6 +16,9 @@ defmodule PRM.Contact do
 
   alias __MODULE__
 
+  @doc """
+  Returns the name based on addressing preference
+  """
   def name(contact) do
     case contact.addressing do
       :last_name -> contact.last_name
