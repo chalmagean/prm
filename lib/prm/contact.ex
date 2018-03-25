@@ -14,8 +14,6 @@ defmodule PRM.Contact do
     activities: []
   ]
 
-  alias __MODULE__
-
   @doc """
   Returns the name based on addressing preference
   """
