@@ -1,4 +1,7 @@
 defmodule PRM.Contact do
+  @moduledoc """
+  The `Contact` is the main subject here. The purpose of the app is to manage contact related events.
+  """
 
   @enforce_keys [:first_name]
 
