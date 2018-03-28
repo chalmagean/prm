@@ -5,6 +5,8 @@ defmodule PRM.Contact do
 
   @enforce_keys [:first_name]
 
+  alias __MODULE__
+
   defstruct [
     first_name: nil,
     last_name: nil,
@@ -16,6 +18,13 @@ defmodule PRM.Contact do
     reminders: [],
     activities: []
   ]
+
+  @doc """
+  Return a new `Contact`
+  """
+  def new(first_name) do
+    %Contact{first_name: first_name}
+  end
 
   @doc """
   Returns the name based on addressing preference
