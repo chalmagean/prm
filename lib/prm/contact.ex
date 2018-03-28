@@ -7,17 +7,15 @@ defmodule PRM.Contact do
 
   alias __MODULE__
 
-  defstruct [
-    first_name: nil,
-    last_name: nil,
-    nickname: nil,
-    dob: nil,
-    addressing: :first_name,
-    address: nil,
-    notes: nil,
-    reminders: [],
-    activities: []
-  ]
+  defstruct first_name: nil,
+            last_name: nil,
+            nickname: nil,
+            dob: nil,
+            addressing: :first_name,
+            address: nil,
+            notes: nil,
+            reminders: [],
+            activities: []
 
   @doc """
   Return a new `Contact`
