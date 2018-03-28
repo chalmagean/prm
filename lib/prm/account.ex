@@ -11,6 +11,9 @@ defmodule PRM.Account do
     %Account{contacts: []}
   end
 
+  @doc """
+  Returns a new `Account` with the `contact` added to it `contacts` list.
+  """
   def add_contact(account = %Account{}, contact) do
     new_list_of_contacts = [contact | account.contacts]
     %Account{account | contacts: new_list_of_contacts}
